@@ -18,7 +18,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    oh-my-zsh
     eza
     bat
     alacritty
@@ -37,11 +36,12 @@
       enable = true;
       shellAliases = {
         ll="eza -lah";
-        update="nh os switch; nh clean -K 30d";
+        ls="eza";
+        update="nh os switch; nh clean all -K 30d";
       };
       oh-my-zsh = {
         enable = true;
-        plugins = ["git"];
+        plugins = ["git" "colored-man-pages" "colorize" "common-aliases" "cp" "direnv" "eza" "man" "rust"];
         theme = "re5et";
       };
     };
