@@ -21,6 +21,7 @@
     eza
     bat
     alacritty
+    python312Packages.pygments
   ];
 
   programs = {
