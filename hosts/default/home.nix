@@ -31,6 +31,7 @@
       extraConfig =  {
         push.autoSetupRemote = true;
         commit.gpgsign = true;
+        user.signingkey = "919386A939093546";
       };
     };
     zsh = {
