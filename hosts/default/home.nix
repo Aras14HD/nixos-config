@@ -25,7 +25,7 @@
     chromium
     steam
     heroic
-    obs
+    obs-studio
     libreoffice
     hyphenDicts.de_DE
     beeper
