@@ -37,7 +37,7 @@
       shellAliases = {
         ll="eza -lah";
         ls="eza";
-        update="nh os switch; nh clean all -K 30d";
+        update="nh os switch; nh clean all -K 30d -k 5";
       };
       oh-my-zsh = {
         enable = true;
