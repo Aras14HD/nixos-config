@@ -14,6 +14,9 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+  
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -181,7 +184,7 @@
   services.syncthing = {
     enable = true;
     user = "jorim";
-    dataDir = "home/jorim/Sync";
+    dataDir = "home/jorim/Syncs";
     configDir = "/home/jorim/.config/syncthing";
   };
 
