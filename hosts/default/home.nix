@@ -30,6 +30,7 @@
       userEmail = "aras14k5@gmail.com";
       extraConfig =  {
         push.autoSetupRemote = true;
+        commit.gpgsign = true;
       };
     };
     zsh = {
