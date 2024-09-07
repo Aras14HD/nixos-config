@@ -135,6 +135,8 @@
   programs.zsh.enable = true;
 
   programs.direnv.enable = true;
+  programs.direnv.nix-direnv.enable = true;
+  programs.direnv.enableZshIntegration = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
