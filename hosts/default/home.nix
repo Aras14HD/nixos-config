@@ -6,10 +6,6 @@
   home.username = "jorim";
   home.homeDirectory = "/home/jorim";
 
-  environment.variables = {
-    EDITOR = "hx";
-  };
-
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -57,6 +53,7 @@
         ls="eza";
         update="nh os switch; nh clean all -K 30d -k 5";
       };
+      envExtra = "export EDITOR=hx";
       oh-my-zsh = {
         enable = true;
         plugins = ["git" "colored-man-pages" "colorize" "common-aliases" "cp" "direnv" "eza" "man" "rust"];
