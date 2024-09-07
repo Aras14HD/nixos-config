@@ -102,6 +102,8 @@
     secrets.gpg_backup = {
       owner = config.users.users.jorim.name;
     };
+    secrets."ssh/id_ed25519".owner = config.users.users.jorim.name;
+    secrets."ssh/id_ed25519.pub".owner = config.users.users.jorim.name;
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
