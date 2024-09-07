@@ -138,6 +138,8 @@
   programs.direnv.nix-direnv.enable = true;
   programs.direnv.enableZshIntegration = true;
 
+  programs.gnupg.agent.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -154,7 +156,6 @@
     nix-output-monitor
     nvd
     sops
-    gnupg
     wineWowPackages.stable
   ];
 
