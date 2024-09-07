@@ -140,6 +140,24 @@
 
   programs.gnupg.agent.enable = true;
 
+  programs.gamemode.enable = true;
+
+  programs.adb.enable = true;
+
+  programs.firejail.enable = true;
+  programs.firejail.wrappedBinaries = {
+    
+  };
+
+  programs.kdeconnect.enable = true;
+
+  programs.partition-manager.enable = true;
+
+  programs.thefuck.enable = true;
+
+  programs.virt-manager.enable = true;
+
+  programs.wireshark.enable = true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -155,6 +173,7 @@
     nh
     nix-output-monitor
     nvd
+    btop
     sops
     wineWowPackages.stable
   ];
@@ -173,13 +192,16 @@
     };
   };
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
+  services.clamav = {
+    daemon.enable = true;
+    scanner.enable = true;
+    fangfrisch.enable = true;
+    updater.enable = true;      
+  };
+
+  services.blueman.enable = true;
+
+  services.fwupd.enable = true;
 
   # List services that you want to enable:
 

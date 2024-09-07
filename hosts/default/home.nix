@@ -6,6 +6,10 @@
   home.username = "jorim";
   home.homeDirectory = "/home/jorim";
 
+  environment.variables = {
+    EDITOR = "hx";
+  };
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -22,6 +26,17 @@
     bat
     alacritty
     python312Packages.pygments
+    chromium
+    steam
+    heroic
+    obs
+    libreoffice
+    hyphenDicts.de_DE
+    beeper
+    gimp
+    musescore
+    krita
+    xournalpp
   ];
 
   programs = {
