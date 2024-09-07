@@ -99,7 +99,7 @@
     defaultSopsFile = ../../secrets/secrets.yaml;
     defaultSopsFormat = "yaml";
     age.keyFile = "/home/jorim/.config/sops/age/keys.txt";
-    secrets.example_key = {
+    secrets.gpg_backup = {
       owner = config.users.users.jorim.name;
     };
   };
@@ -144,6 +144,7 @@
     nix-output-monitor
     nvd
     sops
+    gnupg
     wineWowPackages.stable
   ];
 
