@@ -183,13 +183,6 @@
     user = "jorim";
     dataDir = "home/jorim/Sync";
     configDir = "/home/jorim/.config/syncthing";
-    settings = {
-      devices = {
-        "Phone" = { id = "GBDUSAC-MLHR24F-7OKWONE-G4IDRH5-5YLRMFQ-KAB7BL4-2KD3MRR-PLA5ZA7"; };
-        "Old Laptop" = {id = "JPAFGDO-TLFFCII-EET7NKD-7BBOJRL-HKH34N2-EFNFLW7-VURMORN-VCY7UAV";};
-        "Tablet" = {id = "UZCVJFB-RUVDXI4-GIWWJ5V-TFB2NDJ-TWB7NAC-6CA52VL-73JDEMA-5E5M5A6";};
-      };
-    };
   };
 
   services.clamav = {
