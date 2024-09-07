@@ -106,6 +106,10 @@
     secrets."ssh/id_ed25519.pub".owner = config.users.users.jorim.name;
   };
 
+  fonts.packages = with pkgs; [
+    atkinson-hyperlegible
+    noto-fonts
+  ];
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jorim = {
     isNormalUser = true;
