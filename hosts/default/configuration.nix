@@ -88,6 +88,9 @@
     #media-session.enable = true;
   };
 
+  # make shebangs and many programs work by populating /bin
+  services.envfs.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
