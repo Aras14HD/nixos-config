@@ -52,9 +52,11 @@
       shellAliases = {
         ll="eza -lah";
         ls="eza";
+        cat="bat";
         update="nh os switch; nh clean all -K 30d -k 5";
+        upgrade="nix flake update /home/jorim/.config/nixos; nh os switch; nh clean all -K 30d -k 5; flatpak update;";
       };
-      envExtra = "export EDITOR=hx";
+      envExtra = "export EDITOR=hx\nexport PATH=$PATH:/home/jorim/Applications/scripts";
       oh-my-zsh = {
         enable = true;
         plugins = ["git" "colored-man-pages" "colorize" "common-aliases" "cp" "direnv" "eza" "man" "rust"];

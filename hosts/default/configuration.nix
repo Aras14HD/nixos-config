@@ -184,6 +184,7 @@
     nvd
     btop
     sops
+    zellij
     wineWowPackages.stable
   ];
 
