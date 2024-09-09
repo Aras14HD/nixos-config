@@ -189,6 +189,7 @@
     sops
     zellij
     markdown-oxide
+    typst
     wineWowPackages.stable
   ];
 
