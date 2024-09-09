@@ -188,7 +188,7 @@
     btop
     sops
     zellij
-    marksman
+    markdown-oxide
     wineWowPackages.stable
   ];
 
