@@ -125,7 +125,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jorim = {
     isNormalUser = true;
-    description = "Jorim Ben Kowalewski";
+    description = "Jorim";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
