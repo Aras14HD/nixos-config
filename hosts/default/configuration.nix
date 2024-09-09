@@ -190,6 +190,7 @@
     zellij
     markdown-oxide
     typst
+    typst-lsp
     wineWowPackages.stable
   ];
 
