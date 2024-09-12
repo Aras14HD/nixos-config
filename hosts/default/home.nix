@@ -34,6 +34,7 @@
     musescore
     krita
     xournalpp
+    obsidian
   ];
 
   programs = {

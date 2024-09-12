@@ -208,8 +208,6 @@
     updater.enable = true;      
   };
 
-  services.blueman.enable = true;
-
   services.fwupd.enable = true;
 
   # List services that you want to enable:
