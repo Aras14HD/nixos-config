@@ -54,8 +54,8 @@
         ll="eza -lah";
         ls="eza";
         cat="bat";
-        update="nh os switch; nh clean all -K 30d -k 5";
-        upgrade="nix flake update /home/jorim/.config/nixos; git -C /home/jorim/.config/nixos add flake.lock; git -C /home/jorim/.config/nixos commit -m \"update flake\"; git -C /home/jorim/.config/nixos push; nh os switch; nh clean all -K 30d -k 5; flatpak update;";
+        update="nh os switch; nh clean all -K 14d -k 5";
+        upgrade="nix flake update /home/jorim/.config/nixos; git -C /home/jorim/.config/nixos add flake.lock; git -C /home/jorim/.config/nixos commit -m \"update flake\"; git -C /home/jorim/.config/nixos push; nh os switch; nh clean all -K 14d -k 5; flatpak update;";
       };
       envExtra = "export EDITOR=hx\nexport PATH=$PATH:/home/jorim/Applications/scripts";
       oh-my-zsh = {
