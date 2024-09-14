@@ -88,6 +88,8 @@
     #media-session.enable = true;
   };
 
+  virtualisation.libvirtd.enable = true;
+
   # make shebangs and many programs work by populating /bin
   services.envfs.enable = true;
 
