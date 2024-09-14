@@ -191,6 +191,7 @@
     markdown-oxide
     typst
     typst-lsp
+    ripgrep
     wineWowPackages.stable
   ];
 
