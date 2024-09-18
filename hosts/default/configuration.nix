@@ -131,6 +131,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kdePackages.kate
+      kdePackages.krfb
       thunderbird
     ];
     shell = pkgs.zsh;
