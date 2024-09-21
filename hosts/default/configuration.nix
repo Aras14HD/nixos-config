@@ -128,7 +128,7 @@
   users.users.jorim = {
     isNormalUser = true;
     description = "Jorim";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" ];
     packages = with pkgs; [
       kdePackages.kate
       kdePackages.krfb
