@@ -69,6 +69,44 @@
         theme = "re5et";
       };
     };
+    helix = {
+      enable = true;
+      settings = {
+        theme = "ayu_evolve";
+        editor = {
+          cursor-shape = {
+            insert = "bar";
+            normal = "underline";
+            select = "block";
+          };
+          statusline = {
+            left = ["mode" "spinner" "version-control" "file-name" "file-modification-indicator"];
+            right = ["diagnostics" "selections" "position" "separator" "file-encoding" "total-line-numbers"];
+          };
+          lsp = {
+            auto-signature-help = true;
+          };
+          auto-pairs = {
+            "<" = ">";
+            "[" = "]";
+            "{" = "}";
+            "(" = ")";
+            "'" = "'";
+            "`" = "`";
+            "\"" = "\"";
+          };
+          indent-guides = {
+            render = true;
+            character = "┊";
+            skip-levels = 1;
+          };
+          soft-wrap = {
+            # enable = true;
+            max-wrap = 25;
+          };
+        };
+      };
+    };
   };
   
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
