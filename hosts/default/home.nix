@@ -35,6 +35,9 @@
     krita
     xournalpp
     obsidian
+    audacity
+    mpv
+    vlc
   ];
 
   programs = {
