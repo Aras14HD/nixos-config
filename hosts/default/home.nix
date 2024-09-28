@@ -6,6 +6,12 @@
   home.username = "jorim";
   home.homeDirectory = "/home/jorim";
 
+  imports = [
+    ../../modules/home-manager/git.nix
+    ../../modules/home-manager/zsh.nix
+    ../../modules/home-manager/helix.nix
+  ];
+
   nixpkgs.config.allowUnfree = true;
 
   # This value determines the Home Manager release that your configuration is
@@ -40,75 +46,10 @@
     vlc
   ];
 
-  programs = {
-    git = {
-      enable = true;
-      userName = "Aras14HD";
-      userEmail = "aras14k5@gmail.com";
-      extraConfig =  {
-        push.autoSetupRemote = true;
-        commit.gpgsign = true;
-        user.signingkey = "919386A939093546";
-      };
-    };
-    zsh = {
-      enable = true;
-      shellAliases = {
-        ll="eza -lah";
-        ls="eza";
-        cat="bat";
-        grep="rg";
-        update="nh os switch; nh clean all -K 14d -k 5";
-        edit-config="cd /home/jorim/.config/nixos && hx && git add . && git commit && git push && nh os switch; nh clean all -K 14d -k 5; cd -";
-        upgrade="nix flake update /home/jorim/.config/nixos && git -C /home/jorim/.config/nixos add flake.lock && git -C /home/jorim/.config/nixos commit -m \"update flake\" && git -C /home/jorim/.config/nixos push && nh os switch; nh clean all -K 14d -k 5; flatpak update;";
-      };
-      envExtra = "export EDITOR=hx\nexport PATH=$PATH:/home/jorim/Applications/scripts";
-      oh-my-zsh = {
-        enable = true;
-        plugins = ["git" "colored-man-pages" "colorize" "common-aliases" "cp" "direnv" "eza" "man" "rust"];
-        theme = "re5et";
-      };
-    };
-    helix = {
-      enable = true;
-      settings = {
-        theme = "ayu_evolve";
-        editor = {
-          cursor-shape = {
-            insert = "bar";
-            normal = "underline";
-            select = "block";
-          };
-          statusline = {
-            left = ["mode" "spinner" "version-control" "file-name" "file-modification-indicator"];
-            right = ["diagnostics" "selections" "position" "separator" "file-encoding" "total-line-numbers"];
-          };
-          lsp = {
-            auto-signature-help = true;
-          };
-          auto-pairs = {
-            "<" = ">";
-            "[" = "]";
-            "{" = "}";
-            "(" = ")";
-            "'" = "'";
-            "`" = "`";
-            "\"" = "\"";
-          };
-          indent-guides = {
-            render = true;
-            character = "┊";
-            skip-levels = 1;
-          };
-          soft-wrap = {
-            # enable = true;
-            max-wrap = 25;
-          };
-        };
-      };
-    };
-  };
-  
+  programs.zsh.enable = true;
+  programs.git.enable = true;
+  programs.helix.enable = true;
+
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
