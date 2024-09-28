@@ -13,6 +13,7 @@
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.allowedUsers = [ "@wheel" ];
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
@@ -143,6 +144,9 @@
       "jorim" = import ./home.nix;
     };
   };
+
+  # Security settings
+  security.apparmor.enable = true;
 
   # Install firefox.
   programs.firefox.enable = true;
