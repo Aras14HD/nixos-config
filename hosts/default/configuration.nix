@@ -176,6 +176,8 @@
 
   programs.virt-manager.enable = true;
 
+  virtualisation.waydroid.enable = true;
+
   programs.wireshark.enable = true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
