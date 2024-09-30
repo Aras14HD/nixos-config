@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       inputs.home-manager.nixosModules.default
+      inputs.musnix.nixosModules.musnix
       inputs.sops-nix.nixosModules.sops
     ];
 
@@ -89,6 +90,8 @@
     #media-session.enable = true;
   };
 
+  musnix.enable = true;
+
   virtualisation.libvirtd.enable = true;
 
   # make shebangs and many programs work by populating /bin
@@ -129,7 +132,7 @@
   users.users.jorim = {
     isNormalUser = true;
     description = "Jorim";
-    extraGroups = [ "networkmanager" "wheel" "dialout" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "audio" ];
     packages = with pkgs; [
       kdePackages.kate
       kdePackages.krfb
