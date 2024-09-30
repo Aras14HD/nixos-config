@@ -13,6 +13,7 @@
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    musnix.url = "github:musnix/musnix";
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
@@ -21,6 +22,7 @@
         specialArgs = {inherit inputs;};
         modules = [
           ./hosts/default/configuration.nix
+          inputs.musnix.nixosModules.musnix
           inputs.home-manager.nixosModules.default
         ];
       };
