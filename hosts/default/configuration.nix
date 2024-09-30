@@ -91,6 +91,8 @@
   };
 
   musnix.enable = true;
+  musnix.soundcardPciId = "c1:00.1";
+  musnix.rtcqs.enable = true;
 
   virtualisation.libvirtd.enable = true;
 
