@@ -208,6 +208,7 @@
     typst
     typst-lsp
     ripgrep
+    nixops
     wineWowPackages.stable
   ];
 
