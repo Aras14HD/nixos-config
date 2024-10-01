@@ -201,6 +201,7 @@
     nh
     nix-output-monitor
     nvd
+    gdb
     btop
     sops
     zellij
