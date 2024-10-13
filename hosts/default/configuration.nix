@@ -18,6 +18,7 @@
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+  hardware.sensor.iio.enable = true; # automatic backlight
   
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -210,6 +211,7 @@
     typst-lsp
     ripgrep
     deploy-rs
+    framework-tools
     wineWowPackages.stable
   ];
 
