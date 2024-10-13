@@ -211,7 +211,7 @@
     typst-lsp
     ripgrep
     deploy-rs
-    framework-tools
+    framework-tool
     wineWowPackages.stable
   ];
 
