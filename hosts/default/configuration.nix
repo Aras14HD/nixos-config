@@ -208,7 +208,7 @@
     zellij
     markdown-oxide
     typst
-    typst-lsp
+    tinymist
     ripgrep
     deploy-rs
     framework-tool
