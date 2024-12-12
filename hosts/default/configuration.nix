@@ -210,6 +210,7 @@
     markdown-oxide
     typst
     tinymist
+    jre_minimal
     ripgrep
     deploy-rs
     framework-tool
