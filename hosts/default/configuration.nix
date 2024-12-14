@@ -141,6 +141,7 @@
       kdePackages.kate
       kdePackages.krfb
       thunderbird
+      filelight
     ];
     shell = pkgs.zsh;
   };
@@ -212,6 +213,7 @@
     tinymist
     jre_minimal
     ripgrep
+    dust
     deploy-rs
     framework-tool
     wineWowPackages.stable
