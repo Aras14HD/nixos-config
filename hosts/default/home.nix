@@ -39,6 +39,7 @@
     gimp
     musescore
     inkscape
+    fontforge
     lmms
     krita
     xournalpp
