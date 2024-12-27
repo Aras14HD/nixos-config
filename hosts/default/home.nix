@@ -38,6 +38,7 @@
     beeper
     gimp
     musescore
+    kdenlive
     inkscape
     lmms
     krita
