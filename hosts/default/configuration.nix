@@ -206,6 +206,7 @@
     nvd
     gdb
     btop
+    ffmpeg-full
     sops
     zellij
     markdown-oxide
