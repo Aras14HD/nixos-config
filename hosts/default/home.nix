@@ -31,7 +31,7 @@
     alacritty
     python312Packages.pygments
     chromium
-    # heroic
+    heroic
     obs-studio
     libreoffice
     hyphenDicts.de_DE
