@@ -40,7 +40,7 @@
     musescore
     kdenlive
     inkscape
-    lmms
+    # lmms
     krita
     xournalpp
     obsidian
