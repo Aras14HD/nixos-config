@@ -217,6 +217,7 @@
     dust
     deploy-rs
     framework-tool
+    mpris-scrobbler
     wineWowPackages.stable
   ];
 
