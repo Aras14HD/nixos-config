@@ -42,6 +42,7 @@
     inkscape
     lmms
     krita
+    kcharselect
     xournalpp
     obsidian
     audacity
