@@ -130,6 +130,7 @@
 
   fonts.packages = with pkgs; [
     atkinson-hyperlegible
+    atkinson-monolegible
     noto-fonts
   ];
   # Define a user account. Don't forget to set a password with ‘passwd’.
