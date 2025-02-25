@@ -142,7 +142,7 @@
       kdePackages.kate
       kdePackages.krfb
       thunderbird
-      filelight
+      kdePackages.filelight
     ];
     shell = pkgs.zsh;
   };
