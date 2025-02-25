@@ -38,7 +38,7 @@
     beeper
     gimp
     musescore
-    kdenlive
+    kdePackages.kdenlive
     inkscape
     lmms
     krita
