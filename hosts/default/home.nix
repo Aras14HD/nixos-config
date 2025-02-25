@@ -42,7 +42,7 @@
     inkscape
     lmms
     krita
-    kcharselect
+    kdePackages.kcharselect
     xournalpp
     obsidian
     audacity
