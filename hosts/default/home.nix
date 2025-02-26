@@ -48,6 +48,7 @@
     audacity
     mpv
     vlc
+    itch
   ];
 
   programs.zsh.enable = true;
