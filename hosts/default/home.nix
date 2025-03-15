@@ -38,6 +38,7 @@
     beeper
     gimp
     musescore
+    muse-sounds-manager
     kdePackages.kdenlive
     inkscape
     lmms
