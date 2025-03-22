@@ -143,6 +143,7 @@
       kdePackages.krfb
       thunderbird
       kdePackages.filelight
+      nushell
     ];
     shell = pkgs.nushell;
   };
@@ -161,7 +162,6 @@
   programs.firefox.enable = true;
 
   programs.zsh.enable = true;
-  programs.nushell.enable = true;
 
   programs.direnv.enable = true;
   programs.direnv.nix-direnv.enable = true;
