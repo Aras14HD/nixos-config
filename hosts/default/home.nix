@@ -10,6 +10,7 @@
     ../../modules/home-manager/git.nix
     ../../modules/home-manager/zsh.nix
     ../../modules/home-manager/helix.nix
+    ../../modules/home-manager/nushell.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -53,6 +54,7 @@
   ];
 
   programs.zsh.enable = true;
+  programs.nushell.enable = true;
   programs.git.enable = true;
   programs.helix.enable = true;
 
