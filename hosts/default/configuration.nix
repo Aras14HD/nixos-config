@@ -144,7 +144,7 @@
       thunderbird
       kdePackages.filelight
     ];
-    shell = pkgs.zsh;
+    shell = pkgs.nushell;
   };
 
   home-manager = {
@@ -161,6 +161,7 @@
   programs.firefox.enable = true;
 
   programs.zsh.enable = true;
+  programs.nushell.enable = true;
 
   programs.direnv.enable = true;
   programs.direnv.nix-direnv.enable = true;
