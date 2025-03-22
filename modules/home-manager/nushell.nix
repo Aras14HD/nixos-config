@@ -6,11 +6,13 @@
       ls="eza";
       cat="bat";
       grep="rg";
+      nom-shell="nom-shell --run nu";
     };
     extraConfig = ''
       $env.NIXOS_CONFIG = "/home/jorim/.config/nixos"
       $env.PATH = ($env.PATH | append /home/jorim/Applications/scripts)
       $env.EDITOR = "hx"
+      $env.SHELL = "nu"
       $env.config = {
         hooks: {
           pre_prompt: [{ ||
