@@ -7,12 +7,12 @@
       cat="bat";
       grep="rg";
       update="nh os switch; nh clean all -K 14d -k 5";
-      edit-config="cd /home/jorim/.config/nixos; hx; git add .; git commit; git push; nh os switch; nh clean all -K 14d -k 5; cd -;";
+      edit-config="cd /home/jorim/.config/nixos; run-external $env.EDITOR; git add .; git commit; git push; nh os switch; nh clean all -K 14d -k 5; cd -;";
       upgrade="nix flake update --flake /home/jorim/.config/nixos; git -C /home/jorim/.config/nixos add flake.lock; git -C /home/jorim/.config/nixos commit -m \"update flake\"; git -C /home/jorim/.config/nixos push; nh os switch; nh clean all -K 14d -k 5; flatpak update;";
     };
     extraConfig = ''
       $env.PATH = ($env.PATH | append /home/jorim/Applications/scripts)
-      $env.EDITOR = "/bin/hx"
+      $env.EDITOR = \"/bin/hx\"
       $env.config = {
         hooks: {
           pre_prompt: [{ ||
