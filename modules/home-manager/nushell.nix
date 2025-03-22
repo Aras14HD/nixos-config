@@ -12,7 +12,7 @@
     };
     extraConfig = ''
       $env.PATH = ($env.PATH | append /home/jorim/Applications/scripts)
-      $env.EDITOR = /bin/hx
+      $env.EDITOR = "/bin/hx"
       $env.config = {
         hooks: {
           pre_prompt: [{ ||
