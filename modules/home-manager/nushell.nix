@@ -3,7 +3,6 @@
   programs.nushell = {
       shellAliases = {
       ll="eza -lah";
-      ls="eza";
       cat="bat";
       grep="rg";
       nom-shell="nom-shell --run nu";
