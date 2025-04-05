@@ -29,6 +29,7 @@
       def update [] {nh os switch; nh clean all -K 14d -k 5}
       def edit-config [] {run-external $env.EDITOR $env.NIXOS_CONFIG; git -C $env.NIXOS_CONFIG add .; git -C $env.NIXOS_CONFIG commit; git -C $env.NIXOS_CONFIG push; nh os switch; nh clean all -K 14d -k 5}
       def upgrade [] {nix flake update --flake $env.NIXOS_CONFIG; git -C $env.NIXOS_CONFIG add flake.lock; git -C $env.NIXOS_CONFIG commit -m "update flake"; git -C $env.NIXOS_CONFIG push; nh os switch; nh clean all -K 14d -k 5; flatpak update}
+      fastfetch
     '';
   };
   programs.carapace.enable = true;
