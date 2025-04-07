@@ -35,7 +35,6 @@
     heroic
     obs-studio
     libreoffice
-    steam
     hyphenDicts.de_DE
     beeper
     gimp
