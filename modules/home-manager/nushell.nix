@@ -12,6 +12,7 @@
       $env.PATH = ($env.PATH | append /home/jorim/Applications/scripts)
       $env.EDITOR = "hx"
       $env.SHELL = "nu"
+      $env.config.show_banner = false
       $env.config = {
         hooks: {
           pre_prompt: [{ ||
