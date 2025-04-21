@@ -36,7 +36,7 @@
     obs-studio
     libreoffice
     hyphenDicts.de_DE
-    beeper
+    # beeper
     gimp
     musescore
     muse-sounds-manager
