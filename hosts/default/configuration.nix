@@ -119,6 +119,9 @@
     secrets.gpg_backup = {
       owner = config.users.users.jorim.name;
     };
+    secrets.cloudflared-creds = {
+      owner = config.users.users.jorim.name;
+    };
     # secrets."ssh/id_ed25519" = {
     #   owner = config.users.users.jorim.name;
     #   path = "/home/jorim/.ssh/id_ed25519";
