@@ -240,6 +240,10 @@
     updater.enable = true;      
   };
 
+  services.cloudflared = {
+    enable = true;
+  };
+
   services.fwupd.enable = true;
 
   # List services that you want to enable:
