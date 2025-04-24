@@ -242,6 +242,12 @@
 
   services.cloudflared = {
     enable = true;
+    tunnels = {
+      "1bfe63af-b2bd-4686-a416-f9d555393dee" = {
+        credentialsFile = "${config.sops.secrets.cloudflared-creds.path}";
+        default = "http_status:404";
+      };
+    };
   };
 
   services.fwupd.enable = true;
