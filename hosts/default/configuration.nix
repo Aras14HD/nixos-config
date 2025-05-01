@@ -108,6 +108,7 @@
 
   environment.sessionVariables = {
     FLAKE = "/home/jorim/.config/nixos";
+    NH_FLAKE = "/home/jorim/.config/nixos";
     XDG_DATA_HOME = "/home/jorim/.local/share";
     EDITOR = "hx";
   };
