@@ -6,7 +6,9 @@
     extraConfig =  {
       push.autoSetupRemote = true;
       commit.gpgsign = true;
-      user.signingkey = "919386A939093546";
+      gpg.format = "ssh";
+      user.signingkey = "/home/jorim/.ssh/id_ecdsa_sk";
+      # user.signingkey = "919386A939093546";
     };
   };
 }
