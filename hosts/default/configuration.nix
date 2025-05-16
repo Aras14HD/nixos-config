@@ -92,6 +92,11 @@
     #media-session.enable = true;
   };
 
+  security.pam.services = {
+    login.u2fAuth = true;
+    sudo.u2fAuth = true;
+  };
+
   musnix.enable = true;
   musnix.soundcardPciId = "c1:00.1";
   musnix.rtcqs.enable = true;
