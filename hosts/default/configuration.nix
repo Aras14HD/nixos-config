@@ -192,8 +192,6 @@
 
   programs.virt-manager.enable = true;
 
-  programs.ssh.startAgent = true;
-
   # virtualisation.waydroid.enable = true;
 
   programs.wireshark.enable = true;
@@ -260,6 +258,8 @@
   };
 
   services.pcscd.enable = true;
+
+  services.yubikey-agent.enable = true;
 
   services.cloudflare-warp.enable = true;
 
