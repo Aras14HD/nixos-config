@@ -215,6 +215,8 @@
     nvd
     gdb
     btop
+    rage
+    age-plugin-yubikey
     ffmpeg-full
     sops
     zellij
