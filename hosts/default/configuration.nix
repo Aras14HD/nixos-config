@@ -217,6 +217,7 @@
     btop
     rage
     age-plugin-yubikey
+    opensc
     ffmpeg-full
     sops
     zellij
