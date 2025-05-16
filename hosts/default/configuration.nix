@@ -256,6 +256,8 @@
     };
   };
 
+  services.pcscd.enable = true;
+
   services.cloudflare-warp.enable = true;
 
   services.fwupd.enable = true;
