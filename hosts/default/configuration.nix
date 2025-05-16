@@ -192,6 +192,8 @@
 
   programs.virt-manager.enable = true;
 
+  programs.ssh.startAgent = true;
+
   # virtualisation.waydroid.enable = true;
 
   programs.wireshark.enable = true;
