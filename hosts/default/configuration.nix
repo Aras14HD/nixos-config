@@ -193,7 +193,6 @@
 
   programs.partition-manager.enable = true;
 
-  programs.thefuck.enable = true;
 
   programs.virt-manager.enable = true;
 
@@ -209,6 +208,7 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     fastfetch
+    thefuck
     helix
     pciutils
     usbutils
