@@ -42,7 +42,7 @@
     muse-sounds-manager
     kdePackages.kdenlive
     inkscape
-    lmms
+    # lmms
     krita
     kdePackages.kcharselect
     xournalpp
