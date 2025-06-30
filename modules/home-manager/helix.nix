@@ -40,7 +40,7 @@
       language = [{
         name = "Text";
         language-servers = [{name = "ltex";}];
-        file-types = ["txt" "md" "typ"];
+        file-types = ["txt"];
         scope = "text.text";
         roots = [];
       }];
