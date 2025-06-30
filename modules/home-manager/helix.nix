@@ -46,7 +46,6 @@
       }];
       language-server.ltex = {
         command = "ltex-ls";
-        args = ["--client-configuration=~/.config/ltex-ls.json"];
       };
     };
   };
