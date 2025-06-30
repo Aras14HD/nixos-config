@@ -37,13 +37,13 @@
       };
     };
     languages = {
-      language = {
+      language = [{
         name = "Text";
         language-servers = [{name = "ltex";}];
         file-types = ["txt" "md" "typ"];
         scope = "text.text";
         roots = [];
-      };
+      }];
       language-server.ltex = {
         command = "ltex-ls";
       };
