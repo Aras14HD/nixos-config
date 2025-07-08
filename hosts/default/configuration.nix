@@ -116,6 +116,18 @@
 
   services.flatpak.enable = true;
 
+  # Enable common container config files in /etc/containers
+  virtualisation.containers.enable = true;
+  virtualisation = {
+    podman = {
+      enable = true;
+      # Create a `docker` alias for podman, to use it as a drop-in replacement
+      dockerCompat = true;
+      # Required for containers under podman-compose to be able to talk to each other.
+      defaultNetwork.settings.dns_enabled = true;
+    };
+  };
+
   environment.sessionVariables = {
     FLAKE = "/home/jorim/.config/nixos";
     NH_FLAKE = "/home/jorim/.config/nixos";
@@ -152,11 +164,12 @@
   users.users.jorim = {
     isNormalUser = true;
     description = "Jorim";
-    extraGroups = [ "networkmanager" "wheel" "dialout" "audio" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" "audio" "podman" ];
     packages = with pkgs; [
       kdePackages.kate
       kdePackages.krfb
       thunderbird
+      distrobox
       kdePackages.filelight
       nushell
     ];
