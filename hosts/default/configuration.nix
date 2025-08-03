@@ -262,12 +262,12 @@
     configDir = "/home/jorim/.config/syncthing";
   };
 
-  services.clamav = {
-    daemon.enable = true;
-    scanner.enable = true;
-    fangfrisch.enable = true;
-    updater.enable = true;      
-  };
+  # services.clamav = {
+  #   daemon.enable = true;
+  #   scanner.enable = true;
+  #   fangfrisch.enable = true;
+  #   updater.enable = true;      
+  # };
 
   services.cloudflared = {
     enable = true;
