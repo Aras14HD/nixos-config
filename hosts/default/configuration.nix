@@ -172,7 +172,7 @@
       distrobox
       kdePackages.filelight
       nushell
-      kiwix
+      # kiwix
     ];
     shell = pkgs.nushell;
   };
