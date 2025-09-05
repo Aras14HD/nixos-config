@@ -60,6 +60,9 @@
       fcitx5-mozc
       kdePackages.fcitx5-qt
       fcitx5-chinese-addons
+      fcitx5-rime
+      rime-data
+      fcitx5-chewing
     ];
   };
 
