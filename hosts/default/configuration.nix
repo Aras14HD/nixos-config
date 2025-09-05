@@ -59,6 +59,7 @@
     fcitx5.addons = with pkgs; [
       fcitx5-mozc
       kdePackages.fcitx5-qt
+      fcitx5-chinese-addons
     ];
   };
 
