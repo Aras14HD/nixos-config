@@ -186,6 +186,7 @@
       kdePackages.filelight
       nushell
       kiwix
+      fluffychat
     ];
     shell = pkgs.nushell;
   };
