@@ -187,6 +187,7 @@
       nushell
       kiwix
       fluffychat
+      element-desktop
     ];
     shell = pkgs.nushell;
   };
