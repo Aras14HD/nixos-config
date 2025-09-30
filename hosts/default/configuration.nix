@@ -160,6 +160,10 @@
     secrets.cloudflared-creds = {
       owner = config.users.users.jorim.name;
     };
+    secrets.uni_vpn = {
+      owner = config.users.users.jorim.name;
+      path = "/etc/wireguard/uni.conf";
+    };
     # secrets."ssh/id_ed25519" = {
     #   owner = config.users.users.jorim.name;
     #   path = "/home/jorim/.ssh/id_ed25519";
@@ -272,6 +276,7 @@
     deploy-rs
     framework-tool
     mpris-scrobbler
+    wireguard-tools
     wineWowPackages.stable
   ];
 
@@ -307,6 +312,7 @@
 
   services.fwupd.enable = true;
 
+  networking.wireguard.enable = true;
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
