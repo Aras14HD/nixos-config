@@ -272,6 +272,7 @@
     tinymist
     jre_minimal
     ripgrep
+    qemu
     dust
     deploy-rs
     framework-tool
