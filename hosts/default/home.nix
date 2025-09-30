@@ -31,7 +31,7 @@
     bat
     alacritty
     python312Packages.pygments
-    chromium
+    (chromium.override { enableWideVine = true; })
     heroic
     obs-studio
     libreoffice
