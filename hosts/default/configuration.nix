@@ -188,6 +188,7 @@
       kiwix
       fluffychat
       element-desktop
+      qtcreator
     ];
     shell = pkgs.nushell;
   };
@@ -247,6 +248,7 @@
     usbutils
     git
     nil
+    unzip
     keepassxc
     nh
     nix-output-monitor
