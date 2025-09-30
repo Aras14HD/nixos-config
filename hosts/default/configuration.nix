@@ -120,6 +120,8 @@
   musnix.rtcqs.enable = true;
 
   virtualisation.libvirtd.enable = true;
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = ["jorim"];
 
   # make shebangs and many programs work by populating /bin
   services.envfs.enable = true;
