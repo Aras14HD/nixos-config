@@ -228,6 +228,9 @@
     
   };
 
+  programs.ausweisapp.enable = true;
+  programs.ausweisapp.openFirewall = true;
+
   programs.kdeconnect.enable = true;
 
   programs.partition-manager.enable = true;
