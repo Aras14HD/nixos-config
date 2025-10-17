@@ -192,7 +192,6 @@
       kiwix
       fluffychat
       element-desktop
-      qtcreator
     ];
     shell = pkgs.nushell;
   };
