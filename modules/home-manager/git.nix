@@ -1,9 +1,9 @@
 {...}: 
 {
   programs.git = {
-    userName = "Aras14HD";
-    userEmail = "aras14k5@gmail.com";
-    extraConfig =  {
+    settings = {
+      user.name = "Aras14HD";
+      user.email = "aras14k5@gmail.com";
       push.autoSetupRemote = true;
       commit.gpgsign = true;
       gpg.format = "ssh";

@@ -13,6 +13,7 @@
       inputs.sops-nix.nixosModules.sops
     ];
 
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings.allowed-users = [ "@wheel" ];
 
@@ -205,6 +206,8 @@
 
   # Security settings
   security.apparmor.enable = true;
+
+  # services.openssh.enable = true;
 
   # Install firefox.
   programs.firefox.enable = true;
