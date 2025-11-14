@@ -193,6 +193,7 @@
       kiwix
       fluffychat
       element-desktop
+      prismlauncher
     ];
     shell = pkgs.nushell;
   };
