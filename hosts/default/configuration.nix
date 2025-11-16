@@ -193,7 +193,7 @@
       kiwix
       fluffychat
       element-desktop
-      prismlauncher
+      (prismlauncher.override { jdks = [jdk25_headless jdk21 jdk17 jdk8]; })
     ];
     shell = pkgs.nushell;
   };
