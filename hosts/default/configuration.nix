@@ -285,6 +285,8 @@
     wineWowPackages.stable
   ];
 
+  services.ringboard.wayland.enable = true;
+
   services.syncthing = {
     enable = true;
     user = "jorim";
