@@ -191,6 +191,7 @@
       kdePackages.filelight
       nushell
       kiwix
+      darktable
       fluffychat
       element-desktop
       (prismlauncher.override { jdks = [jdk25_headless jdk21 jdk17 jdk8]; })
