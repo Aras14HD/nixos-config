@@ -33,7 +33,6 @@
     python312Packages.pygments
     (chromium.override { enableWideVine = true; })
     heroic
-    obs-studio
     libreoffice
     hyphenDicts.de_DE
     beeper
