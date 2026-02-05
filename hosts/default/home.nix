@@ -39,7 +39,6 @@
     gimp
     musescore
     muse-sounds-manager
-    kdePackages.kdenlive
     inkscape
     ltex-ls
     # lmms
