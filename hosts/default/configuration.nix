@@ -190,6 +190,7 @@
       distrobox
       kdePackages.filelight
       kdePackages.kdenlive
+      fontforge
       discord
       bottles
       nushell
