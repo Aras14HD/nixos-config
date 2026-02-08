@@ -189,7 +189,9 @@
       thunderbird
       distrobox
       kdePackages.filelight
-      # kdePackages.kdenlive
+      kdePackages.kdenlive
+      discord
+      bottles
       nushell
       kiwix
       darktable
