@@ -194,7 +194,6 @@
       discord
       bottles
       nushell
-      kiwix
       darktable
       fluffychat
       element-desktop
