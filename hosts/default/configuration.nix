@@ -190,6 +190,7 @@
       distrobox
       kdePackages.filelight
       kdePackages.kdenlive
+      kdePackages.qrca
       fontforge-gtk
       discord
       bottles
