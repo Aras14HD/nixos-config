@@ -294,7 +294,7 @@
     framework-tool
     mpris-scrobbler
     wireguard-tools
-    wineWowPackages.stable
+    wineWow64Packages.stable
   ];
 
   services.ringboard.wayland.enable = true;
