@@ -194,6 +194,7 @@
       fontforge-gtk
       discord
       bottles
+      piper
       nushell
       darktable
       fluffychat
@@ -296,6 +297,8 @@
     wireguard-tools
     wineWow64Packages.stable
   ];
+
+  services.ratbagd.enable = true;
 
   services.ringboard.wayland.enable = true;
 
