@@ -6,9 +6,9 @@
       ls="eza";
       cat="bat";
       grep="rg";
-      update="nh os switch; nh clean all -K 14d -k 5";
-      edit-config="cd /home/jorim/.config/nixos && $EDITOR && git add . && git commit && git push && nh os switch; nh clean all -K 14d -k 5; cd -";
-      upgrade="nix flake update --flake /home/jorim/.config/nixos && git -C /home/jorim/.config/nixos add flake.lock && git -C /home/jorim/.config/nixos commit -m \"update flake\" && git -C /home/jorim/.config/nixos push && nh os switch; nh clean all -K 14d -k 5; flatpak update;";
+      update="nh os switch; nh clean all -K 14d -k 3";
+      edit-config="cd /home/jorim/.config/nixos && $EDITOR && git add . && git commit && git push && nh os switch; nh clean all -K 14d -k 3; cd -";
+      upgrade="nix flake update --flake /home/jorim/.config/nixos && git -C /home/jorim/.config/nixos add flake.lock && git -C /home/jorim/.config/nixos commit -m \"update flake\" && git -C /home/jorim/.config/nixos push && nh os switch; nh clean all -K 14d -k 3; flatpak update;";
     };
     envExtra = "export EDITOR=hx\nexport PATH=$PATH:/home/jorim/Applications/scripts\nexport NIXPKGS_ALLOW_UNFREE=1";
     oh-my-zsh = {
