@@ -201,7 +201,7 @@
       kdePackages.qrca
       fontforge-gtk
       discord
-      bottles
+      # bottles
       piper
       nushell
       darktable
