@@ -28,9 +28,9 @@
         }
       }
       alias "upd" = update
-      def update [] {nh os build; bash -c "read -p 'switch now (enter)'" o> /dev/null; nh os switch; nh clean all -K 14d -k 5}
-      def edit-config [] {run-external $env.EDITOR $env.NIXOS_CONFIG; git -C $env.NIXOS_CONFIG add .; git -C $env.NIXOS_CONFIG commit; nh os build; bash -c "read -p 'switch now (enter)'" o> /dev/null; nh os switch; git -C $env.NIXOS_CONFIG push; nh clean all -K 14d -k 5}
-      def upgrade [] {nix flake update --flake $env.NIXOS_CONFIG; git -C $env.NIXOS_CONFIG add flake.lock; git -C $env.NIXOS_CONFIG commit -m "update flake"; nh os build; bash -c "read -p 'switch now (enter)'" o> /dev/null; nh os switch; git -C $env.NIXOS_CONFIG push; nh clean all -K 14d -k 5; flatpak update}
+      def update [] {nh os build; bash -c "read -p 'switch now (enter)'" o> /dev/null; try {nh os switch} catch {nh os boot}; nh clean all -K 14d -k 3}
+      def edit-config [] {run-external $env.EDITOR $env.NIXOS_CONFIG; git -C $env.NIXOS_CONFIG add .; git -C $env.NIXOS_CONFIG commit; nh os build; bash -c "read -p 'switch now (enter)'" o> /dev/null; try {nh os switch} catch {nh os boot}; git -C $env.NIXOS_CONFIG push; nh clean all -K 14d -k 3}
+      def upgrade [] {nix flake update --flake $env.NIXOS_CONFIG; git -C $env.NIXOS_CONFIG add flake.lock; git -C $env.NIXOS_CONFIG commit -m "update flake"; nh os build; bash -c "read -p 'switch now (enter)'" o> /dev/null; try {nh os switch} catch {nh os boot}; git -C $env.NIXOS_CONFIG push; nh clean all -K 14d -k 3; flatpak update}
       fastfetch
     '';
   };
