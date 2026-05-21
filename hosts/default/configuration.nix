@@ -207,7 +207,7 @@
       darktable
       fluffychat
       element-desktop
-      (prismlauncher.override { jdks = [jdk25_headless jdk21 jdk17 jdk8]; })
+      (prismlauncher.override { jdks = [jdk25_headless jdk21 jdk17 jdk8]; additionalLibs = [libxkbcommon]; })
     ];
     shell = pkgs.nushell;
   };
