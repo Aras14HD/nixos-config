@@ -271,6 +271,8 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    man-pages
+    man-pages-posix
     wget
     fastfetch
     helix
@@ -306,6 +308,9 @@
     wineWow64Packages.stable
   ];
 
+  documentation.dev.enable = true;
+  documentation.man.cache.enable = true;
+  
   services.ratbagd.enable = true;
 
   services.ringboard.wayland.enable = true;
