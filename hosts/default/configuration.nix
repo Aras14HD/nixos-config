@@ -74,6 +74,7 @@
       fcitx5-rime
       rime-data
       fcitx5-chewing
+      fcitx5-hangul
     ];
   };
 
