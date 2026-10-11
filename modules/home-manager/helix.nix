@@ -47,7 +47,7 @@
       language-server.ltex = {
         command = "ltex-ls-plus";
         config = {
-          ltex.dictionary = "auto";
+          ltex.language = "auto";
         };
       };
     };
