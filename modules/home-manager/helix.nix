@@ -38,14 +38,15 @@
     };
     languages = {
       language = [{
-        name = "Text";
+        name = "Checked Text";
         language-servers = [{name = "ltex";}];
         file-types = ["txt"];
         scope = "text.text";
         roots = [];
+        comment-tokens = ["# "];
       }];
       language-server.ltex = {
-        command = "ltex-ls";
+        command = "ltex-ls-plus";
       };
     };
   };

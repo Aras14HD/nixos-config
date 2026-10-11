@@ -40,7 +40,7 @@
     musescore
     muse-sounds-manager
     inkscape
-    ltex-ls
+    ltex-ls-plus
     # lmms
     krita
     kdePackages.kcharselect
