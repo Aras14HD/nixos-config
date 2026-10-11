@@ -43,10 +43,12 @@
         file-types = ["txt"];
         scope = "text.text";
         roots = [];
-        comment-tokens = ["# "];
       }];
       language-server.ltex = {
         command = "ltex-ls-plus";
+        config = {
+          ltex.dictionary = "auto";
+        };
       };
     };
   };
