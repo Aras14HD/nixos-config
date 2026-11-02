@@ -11,6 +11,7 @@
       inputs.home-manager.nixosModules.default
       inputs.musnix.nixosModules.musnix
       inputs.sops-nix.nixosModules.sops
+      inputs.freenet.nixosModules.default
     ];
 
   nixpkgs.overlays = [(final: prev: {
@@ -131,6 +132,8 @@
   musnix.soundcardPciId = "c1:00.1";
   musnix.rtcqs.enable = true;
 
+  services.freenet-node.enable = true;
+  
   virtualisation.libvirtd.enable = true;
 
   # make shebangs and many programs work by populating /bin
