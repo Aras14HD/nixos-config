@@ -206,14 +206,12 @@
       kdePackages.kdenlive
       kdePackages.qrca
       fontforge-gtk
-      discord
       bottles
       piper
       nushell
       darktable
       fluffychat
       element-desktop
-      (prismlauncher.override { jdks = [jdk25_headless jdk21 jdk17 jdk8]; additionalLibs = [libxkbcommon]; })
       eza
       bat
       alacritty
@@ -353,6 +351,8 @@
     mpris-scrobbler
     wireguard-tools
     wineWow64Packages.stable
+    (prismlauncher.override { jdks = [jdk25_headless jdk21 jdk17 jdk8]; additionalLibs = [libxkbcommon]; })
+    discord
   ];
 
   documentation.dev.enable = true;
