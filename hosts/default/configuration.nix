@@ -276,8 +276,8 @@
     mpris-proxy = {
       executable = "${pkgs.mpris-scrobbler}/bin/mpris-proxy";
     };
-    discord = {
-      executable = "${pkgs.discord}/bin/discord";
+    Discord = {
+      executable = "${pkgs.discord}/bin/Discord";
       profile = "${pkgs.firejail}/etc/firejail/discord.profile";
       desktop = "${pkgs.discord}/share/applications/discord.desktop";
     };
