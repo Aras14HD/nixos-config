@@ -207,13 +207,36 @@
       kdePackages.qrca
       fontforge-gtk
       discord
-      # bottles
+      bottles
       piper
       nushell
       darktable
       fluffychat
       element-desktop
       (prismlauncher.override { jdks = [jdk25_headless jdk21 jdk17 jdk8]; additionalLibs = [libxkbcommon]; })
+      eza
+      bat
+      alacritty
+      python312Packages.pygments
+      (chromium.override { enableWideVine = true; })
+      heroic
+      libreoffice
+      hyphenDicts.de_DE
+      beeper
+      gimp
+      musescore
+      muse-sounds-manager
+      inkscape
+      ltex-ls-plus
+      lmms
+      krita
+      kdePackages.kcharselect
+      xournalpp
+      obsidian
+      audacity
+      mpv
+      vlc
+      itch
     ];
     shell = pkgs.nushell;
   };
@@ -246,7 +269,25 @@
 
   programs.firejail.enable = true;
   programs.firejail.wrappedBinaries = {
-    
+    mpris-scrobbler = {
+      executable = "${pkgs.mpris-scrobbler}/bin/mpris-scrobbler";
+    };
+    mpris-scrobbler-signon = {
+      executable = "${pkgs.mpris-scrobbler}/bin/mpris-scrobbler-signon";
+    };
+    mpris-proxy = {
+      executable = "${pkgs.mpris-scrobbler}/bin/mpris-proxy";
+    };
+    discord = {
+      executable = "${pkgs.discord}/bin/discord";
+      profile = "${pkgs.firejail}/etc/firejail/discord.profile";
+      desktop = "${pkgs.discord}/share/applications/discord.desktop";
+    };
+    prismlauncher = {
+      executable = "${pkgs.prismlauncher}/bin/prismlauncher";
+      profile = "${pkgs.firejail}/etc/firejail/prismlauncher.profile";
+      desktop = "${pkgs.prismlauncher}/share/applications/org.prismlauncher.PrismLauncher.desktop";
+    };
   };
 
   programs.ausweisapp.enable = true;

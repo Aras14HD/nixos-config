@@ -27,29 +27,6 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    eza
-    bat
-    alacritty
-    python312Packages.pygments
-    (chromium.override { enableWideVine = true; })
-    heroic
-    libreoffice
-    hyphenDicts.de_DE
-    beeper
-    gimp
-    musescore
-    muse-sounds-manager
-    inkscape
-    ltex-ls-plus
-    # lmms
-    krita
-    kdePackages.kcharselect
-    xournalpp
-    obsidian
-    audacity
-    mpv
-    vlc
-    itch
   ];
 
   programs.zsh.enable = true;
