@@ -276,11 +276,11 @@
     mpris-proxy = {
       executable = "${pkgs.mpris-scrobbler}/bin/mpris-proxy";
     };
-    Discord = {
-      executable = "${pkgs.discord}/bin/Discord";
-      profile = "${pkgs.firejail}/etc/firejail/discord.profile";
-      desktop = "${pkgs.discord}/share/applications/discord.desktop";
-    };
+    # Discord = {
+    #   executable = "${pkgs.discord}/bin/Discord";
+    #   profile = "${pkgs.firejail}/etc/firejail/discord.profile";
+    #   desktop = "${pkgs.discord}/share/applications/discord.desktop";
+    # };
     prismlauncher = {
       executable = "${pkgs.prismlauncher}/bin/prismlauncher";
       profile = "${pkgs.firejail}/etc/firejail/prismlauncher.profile";
