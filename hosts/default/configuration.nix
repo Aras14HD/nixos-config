@@ -371,6 +371,11 @@
     configDir = "/home/jorim/.config/syncthing";
   };
 
+  services.yggdrasil = {
+      enable = true;
+  };
+  
+  
   # services.clamav = {
   #   daemon.enable = true;
   #   scanner.enable = true;
