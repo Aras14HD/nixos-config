@@ -1,7 +1,8 @@
 {...}:
 {
   programs.nushell = {
-      shellAliases = {
+    loadSessionVariables = true;
+    shellAliases = {
       ll="eza -lah";
       cat="bat";
       grep="rg";
@@ -36,7 +37,6 @@
   };
   programs.carapace.enable = true;
   programs.carapace.enableNushellIntegration = true;
-
   programs.starship = { enable = true;
     settings = {
       add_newline = true;
