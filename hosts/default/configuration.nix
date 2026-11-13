@@ -373,6 +373,12 @@
 
   services.yggdrasil = {
       enable = true;
+      settings = {
+        Peers = [
+          "tls://ygg.mkg20001.io:443"
+          "tls://sb.eldritcht.fun:47736"
+        ];
+      };
   };
   
   
