@@ -377,6 +377,7 @@
         Peers = [
           "tls://ygg.mkg20001.io:443"
           "tls://sb.eldritcht.fun:47736"
+          "tls://ygg.aras14.dev:5143"
         ];
       };
   };
